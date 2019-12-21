@@ -1,0 +1,53 @@
+<html>
+<head><title>LOGIN PAGE</title>
+     <link rel="icon" href="img/favicon.ico">
+    
+     <!--<link rel="stylesheet" href="/style.css">-->
+   
+        
+</head>
+<body style="background-image: url(/images)">
+    <form action="/login">
+    <div class="container" style=" padding:20px;margin:auto;background-image: url(/g);width:300;height:240;border:solid 2px black;margin-top: 150px;border-radius:20px">
+
+        
+        <div class="row">
+            <label for="name" style="padding: 5px;"><b>MAIL-ID:</b></label>
+            <input type="text" placeholder="enter mail ID"  id="name" onfocus="func()">
+        </div>  
+        <div class="row" style="padding-top:20px">
+            <label for="name" style="padding: 5px;"><b>USER NAME:</b></label>
+            <input type="text" name="ID" placeholder="enter USERNAME" >
+        </div>
+        <div class="row" style="padding-top:20px">
+            <label for="name" style="padding: 5px;"><b>PASSWORD:</b></label>
+            <input type="password" name="ID" placeholder="enter password" >
+        </div>
+        <div class="row" style="padding-top:20px">
+            <label for="name" style="padding: 5px;"><b>PASSWORD:</b></label>
+            <input type="password" name="ID" placeholder="confirm-password" >
+        </div>
+
+        <div class="row" style="text-align: center;padding-top: 20px;">
+            <button style="width: 55px;height: 40px;border-radius: 10px;text-align: center;" onmouseover="over()"  onmouseout="out()" onclick="method()"><b>SignIn</b></button>
+       </div>     
+    </div>
+        </form>
+    
+
+    <script src="/javascript"></script>
+    
+    <script>
+        function over(){
+            document.getElementsByTagName("button")[0].style.backgroundColor="white";
+            document.getElementsByTagName("button")[0].style.color="black";
+        }
+        function out(){
+            document.getElementsByTagName("button")[0].style.backgroundColor="black";
+            document.getElementsByTagName("button")[0].style.color="white";
+        }
+    
+        
+    </script>
+</body>
+</html>
