@@ -8,10 +8,10 @@ var flag=0;
             for(var i=0;i<3;i++)
             {
                 for(var j=0;j<3;j++){
-                    a[i][j]='c';
+                    a[i][j]='c'+i+j;
                 }
             }
-
+            //alert("ss");
             $('td').click(function(){
                 var col = $(this).parent().children().index($(this));
                 var row = $(this).parent().parent().children().index($(this).parent());
@@ -26,49 +26,49 @@ var flag=0;
                 a[row][col]='O';
                     flag=1;
             }
-           if(a[0][0]==a[0][1]==a[0][2]){
+           if(a[0][0]==a[0][1] &&a[0][1]==a[0][2]){
                if(flag==1)
                alert("player-1 WON.");
                else
                alert("player-2 WON...");
            }
-           if(a[1][0]==a[1][1]==a[1][2]){
+           if(a[1][0]==a[1][1]&&a[1][1]==a[1][2]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[2][0]==a[2][1]==a[2][2]){
+        if(a[2][0]==a[2][1]&&a[2][1]==a[2][2]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[0][0]==a[1][0]==a[1][2]){
+        if(a[0][0]==a[1][0]&&a[1][0]==a[1][2]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[0][1]==a[1][1]==a[2][1]){
+        if(a[0][1]==a[1][1]&&a[1][1]==a[2][1]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[0][2]==a[1][2]==a[2][2]){
+        if(a[0][2]==a[1][2]&&a[1][2]==a[2][2]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[0][0]==a[1][1]==a[2][2]){
+        if(a[0][0]==a[1][1]&&a[1][1]==a[2][2]){
             if(flag==1)
             alert("player-1 WON.");
             else
             alert("player-2 WON...");
         }
-        if(a[0][2]==a[1][1]==a[2][0]){
+        if(a[0][2]==a[1][1]&&a[1][1]==a[2][0]){
             if(flag==1)
             alert("player-1 WON.");
             else
