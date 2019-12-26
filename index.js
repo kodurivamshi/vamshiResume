@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT ||3000
 
-app.use(express.static('public'))
+app.use(express.static('resume'))
 //app.get('/', (req, res) => res.sendFile('Hello world...'))
 app.get('/', (req, res) => res.sendFile(__dirname+'/resume/htmls/home.html'))
 app.get("/style", (req, res) => res.sendFile(__dirname+'/resume/css/style.css'))
