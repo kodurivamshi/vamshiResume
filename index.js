@@ -54,6 +54,9 @@ var obj={
     h5:"watching TV shows",
 }
 
+app.get('/', (req, res) => res.sendFile(__dirname+'/public/html/tictac.html'))
+app.get('/style', (req, res) => res.sendFile(__dirname+'/public/css/style.css'))
+//p.get("/login", (req, res) => res.sendFile(__dirname+'/resume/htmls/login.html'))
 
 app.get("/data", (req, res) => res.json(obj))
 

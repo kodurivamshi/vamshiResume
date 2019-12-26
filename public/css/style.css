@@ -1,0 +1,15 @@
+
+            table tr td{
+                border: solid 2px black;
+                text-align: center;
+                width:100px;
+                height:100px;
+                color:blue
+            }
+            table{
+                margin: auto;
+                margin-top: 100;
+                width:500px;
+                height:500px;
+                border:solid 3px white;
+            }

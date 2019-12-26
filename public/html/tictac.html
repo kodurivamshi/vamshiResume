@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TICTACTOE</title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!---<style>
+            table tr td{
+                border: solid 2px black;
+                text-align: center;
+                width:100px;
+                height:100px;
+                color:blue;
+            }
+            table{
+                margin: auto;
+                margin-top: 100;
+                width:500px;
+                height:500px;
+                border:solid 3px white;
+            }
+        </style>-->
+    </head>
+    <body>
+        <h1 class="text-success text-center bg-primary">TIC TAC TOE</h1>
+        <table>
+            <tr>
+                <td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td>
+            </tr>
+            <tr> 
+                    <td></td><td></td><td></td>
+            </tr>
+        </table>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="../js/code.js"></script>
+        <!---<script>
+            var flag=0;
+
+            var arr=new Array(3);
+            arr[0]=new Array(3);
+            arr[1]=new Array(3);
+            arr[2]=new Array(3);
+
+            $('td').click(function(){
+                var col = $(this).parent().children().index($(this));
+                var row = $(this).parent().parent().children().index($(this).parent());
+                //alert('Row: ' + row + ', Column: ' + col);
+                if(flag){
+                $(this).text('X').css({"font-size":"300%"});
+                arr[row][col]='X';
+                    flag=0;
+            }
+            else{
+                $(this).text('O').css({"font-size":"300%"});
+                arr[row][col]='O';
+                    flag=1;
+            }
+            for(let i=0;i<3;i++){
+                var str="";
+                for(let j=0;j<3;j++){
+                    str+=arr[i][j]+" ";
+                }
+                console.log(str);
+            }
+            });
+        </script>-->
+    </body>
+</html>
